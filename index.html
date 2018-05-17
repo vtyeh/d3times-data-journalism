@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3Times</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-md-offset-0">
+				<h1>D3Times</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="title">
+			<h6><strong><i>DATA ANALYTICS</i></strong> 05/17/2018 04:44 pm PT | <strong>Updated</strong> 6 hours ago</h6>
+			<h2>More Money, More Activity</h2>
+			Explore the relationship between fertility of women in poverty and how much exercise they get.
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="iframeContainer">
+					<iframe src="d3.html" height="400" width="580"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12  col-md-9 col-md-offset-0">
+				<div class="article">
+					<p>Using the 2014 one-year estimates from the<a href="https://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml">
+					U.S. Census Bureau's American Community Survey</a> and survey data from the 
+					<a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">
+					Behavioral Risk Factor Surveillance System</a>, we can explore the relationship between 
+					fertility of women above and below the poverty line and how exercise might come in to play.</p>
+					<p>As the percent of women who had a child within the past 12 months and were below the poverty level 
+					($15,000-$40,000 in 2014 depending on family size) went up, the percent of those who exercised within the past month
+					went down. The correlation coefficient between these two variables is -0.76. This means that there is a strong correlation
+					between these two events.</p>
+					<p>As the percent in fertility went up in women who were 200% above the poverty level, the percent of those who exercised 
+					went up as well. The correlation coefficient between these two variables is 0.68, which is also an indication of strong correlation.</p>
+					<p>Perhaps this is the case because women below the poverty line need to work multiple jobs to provide for her newborn child/children and 
+						do not have the time to perform physical activity other than hard labor. Also, they might not have the money to afford a 
+						gym membership or gym equipment. Whereas, on the other hand, women who are above the poverty line do have the time and money
+						for simple luxuries such as exercising. However, correlation does not imply causation. These are just some plausible reasons
+						for the strong correlation between the two. Also, the data on exercise includes the male population as well.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- Footer-->
+	<div id="footer">
+		<p>© Venessa Yeh 2018</p>
+	</div>
+
+</body>
+</html>
