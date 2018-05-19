@@ -15,9 +15,10 @@
 }
 
 .tooltip {
+    pointer-events: none;
     position: absolute;
     width: 135px;
-    height: 60px;
+    height: 70px;
     padding: 2px;
     padding-top: 8px;
     font: 12px sans-serif;

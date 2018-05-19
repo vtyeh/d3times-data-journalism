@@ -1,6 +1,6 @@
 // D3 Scatterplot Assignment
-let svgWidth = 600;
-let svgHeight = 380;
+let svgWidth = 680;
+let svgHeight = 480;
 
 let margin = {
     top: 20,
@@ -77,9 +77,9 @@ function updateToolTip(chosenxAxis, circlesGroup) {
       .attr("class", "tooltip")
       .offset([80, -60])
       .html(function (d) {
-        return (`${d.state}<br>${xlabel} ${d[chosenxAxis]}<br>${ylabel} ${d[chosenyAxis]}`);
+        return (`${d.state}<hr>${xlabel} ${d[chosenxAxis]}<br>${ylabel} ${d[chosenyAxis]}`);
       });
-  
+    
     circlesGroup.call(toolTip);
   
     circlesGroup.on("mouseover", function (data) {
@@ -94,7 +94,7 @@ function updateToolTip(chosenxAxis, circlesGroup) {
   }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("data.csv", function (error, data) {
+d3.csv("../data/data.csv", function (error, data) {
     if (error) throw error;
   
     // parse data
@@ -134,8 +134,8 @@ d3.csv("data.csv", function (error, data) {
       .append("circle")
       .attr("cx", d => xLinearScale(d[chosenxAxis]))
       .attr("cy", d => yLinearScale(d[chosenyAxis]))
-      .attr("r", 6)
-      .attr("fill", "skyblue")
+      .attr("r", 9)
+      .attr("fill", "pink")
       .attr("opacity", "0.8")
       .attr("class", "stateText");
     
@@ -152,7 +152,7 @@ d3.csv("data.csv", function (error, data) {
       .attr("y", function (d) {
         return yLinearScale(d[chosenyAxis]);
       })
-      .attr("font-size", "6px")
+      .attr("font-size", "10px")
       .attr("text-anchor", "middle")
       .attr("fill", "white");
       
@@ -186,7 +186,7 @@ d3.csv("data.csv", function (error, data) {
   
     // updateToolTip function above csv import
     var circlesGroup = updateToolTip(chosenxAxis, circlesGroup);
-  
+
     // x axis labels event listener
     labelsGroup.selectAll("text")
       .on("click", function () {
