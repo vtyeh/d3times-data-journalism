@@ -223,7 +223,7 @@ d3.csv("data.csv", function (error, data) {
             .attr("y", function (d) {
               return yLinearScale(d[chosenyAxis]);
             })
-            .attr("font-size", "6px")
+            .attr("font-size", "10px")
             .attr("text-anchor", "middle")
             .attr("fill", "white");
   
